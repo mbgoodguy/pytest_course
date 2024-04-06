@@ -1,0 +1,10 @@
+/.pytest_cache
+/venv*
+__pycache__
+*.txt
+.vscode
+*.pyc
+*.ipynb
+*.pptx
+.idea
+*pycache
