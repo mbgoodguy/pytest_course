@@ -1,13 +1,9 @@
-import pytest
 import sys
 from pathlib import Path
 
+import pytest
+
 sys.path.append(str(Path(__file__).parent.parent))
-
-from src.candies.service import CandiesService
-from src.candies.schemas import CandySchema
-from src.db import Base, engine
-
 
 
 # @pytest.fixture(autouse=True)
@@ -20,7 +16,6 @@ from src.db import Base, engine
 @pytest.fixture(scope='session', autouse=True)
 def faker_session_locale():
     return ['ru_RU']
-
 
 # @pytest.fixture(scope="function")
 # def fake_candies(request, faker):
